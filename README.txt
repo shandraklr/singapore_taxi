@@ -35,3 +35,8 @@ from geopy.extra.rate_limiter import RateLimiter
         taxi_position_y varchar,
         taxi_areas_pos varchar
     );
+
+    create table if not exists public.x_tax_availability(
+        "timestamp" timestamp,
+        taxi_count_availability bigint
+    );
